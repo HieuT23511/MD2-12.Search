@@ -9,9 +9,9 @@ function filterPhoneNumber(listPhoneNumber: string[]):string {
         let headNumber :string = elements.substring(0, 3);
         if (headViettelPhoneNumber.includes(headNumber)) {
             ViettelPhoneNumber.push(elements);
-        } if (headMobiPhoneNumber.includes(headNumber)) {
+        }else if (headMobiPhoneNumber.includes(headNumber)) {
             MobiPhoneNumber.push(elements);
-        } if (headVinaPhoneNumber.includes(headNumber))
+        }else if (headVinaPhoneNumber.includes(headNumber))
         {
             VinaPhoneNumber.push(elements);
         }
